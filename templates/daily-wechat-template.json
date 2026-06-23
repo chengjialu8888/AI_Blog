@@ -1,0 +1,368 @@
+{
+  "template": {
+    "name": "每日AI速递 - 极简白底排版",
+    "description": "适用于资讯类、日报类公众号文章，纯白底色，层次清晰，信号等级标识",
+    "version": "1.0.0",
+    "author": "huashu-design",
+    "created": "2026-05-18",
+    "tags": ["资讯", "日报", "AI", "极简", "白色背景"]
+  },
+  "config": {
+    "maxWidth": "580px",
+    "backgroundColor": "#ffffff",
+    "textColor": "#1a1a1a",
+    "secondaryTextColor": "#555555",
+    "mutedTextColor": "#999999",
+    "borderColor": "#e0e0e0",
+    "accentColors": {
+      "highImpact": "#e74c3c",
+      "mediumImpact": "#f39c12",
+      "infoStream": "#bbbbbb"
+    },
+    "fonts": {
+      "family": "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+      "sizes": {
+        "title": "22px",
+        "subtitle": "17px",
+        "heading": "15px",
+        "body": "14px",
+        "caption": "13px",
+        "small": "12px",
+        "tiny": "11px"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "normal": 400
+      }
+    },
+    "spacing": {
+      "sectionGap": "36px",
+      "itemGap": "22px",
+      "innerGap": "10px",
+      "padding": {
+        "horizontal": "24px",
+        "vertical": "32px"
+      }
+    },
+    "borders": {
+      "divider": "linear-gradient(to right, transparent, #e0e0e0 20%, #e0e0e0 80%, transparent)",
+      "accentBar": "3px solid #1a1a1a",
+      "separator": "1px solid #d0d0d0"
+    }
+  },
+  "structure": {
+    "header": {
+      "enabled": true,
+      "elements": [
+        {
+          "type": "tagline",
+          "content": "${header.tagline}",
+          "style": {
+            "fontSize": "11px",
+            "color": "#999999",
+            "letterSpacing": "0.25em",
+            "textTransform": "uppercase"
+          }
+        },
+        {
+          "type": "title",
+          "content": "${header.title}",
+          "style": {
+            "fontSize": "22px",
+            "fontWeight": 700,
+            "color": "#1a1a1a",
+            "marginTop": "12px"
+          }
+        },
+        {
+          "type": "subtitle",
+          "content": "${header.subtitle}",
+          "style": {
+            "fontSize": "13px",
+            "color": "#888888",
+            "marginTop": "8px",
+            "lineHeight": "1.6"
+          }
+        },
+        {
+          "type": "separator",
+          "style": {
+            "width": "40px",
+            "height": "1px",
+            "background": "#d0d0d0",
+            "margin": "20px auto 0"
+          }
+        }
+      ]
+    },
+    "signalLegend": {
+      "enabled": true,
+      "title": "信号等级",
+      "signals": [
+        { "icon": "🔴", "label": "高影响", "color": "#e74c3c" },
+        { "icon": "🟡", "label": "中影响", "color": "#f39c12" },
+        { "icon": "⚪", "label": "信息流", "color": "#bbbbbb" }
+      ],
+      "style": {
+        "background": "#fafafa",
+        "borderRadius": "6px",
+        "padding": "12px 16px",
+        "textAlign": "center",
+        "fontSize": "12px",
+        "color": "#999999"
+      }
+    },
+    "sections": [
+      {
+        "id": "mainNews",
+        "type": "newsSection",
+        "title": "大厂动向",
+        "icon": null,
+        "style": {
+          "titleBar": {
+            "accentWidth": "3px",
+            "accentHeight": "18px",
+            "accentColor": "#1a1a1a",
+            "fontSize": "17px",
+            "fontWeight": 700,
+            "letterSpacing": "0.08em"
+          }
+        },
+        "items": {
+          "template": "newsItem",
+          "dataSource": "${sections.mainNews.items}"
+        }
+      },
+      {
+        "id": "insights",
+        "type": "newsSection",
+        "title": "观点与深度",
+        "style": {
+          "titleBar": {
+            "accentWidth": "3px",
+            "accentHeight": "18px",
+            "accentColor": "#1a1a1a",
+            "fontSize": "17px",
+            "fontWeight": 700,
+            "letterSpacing": "0.08em"
+          }
+        },
+        "items": {
+          "template": "newsItem",
+          "dataSource": "${sections.insights.items}"
+        }
+      },
+      {
+        "id": "archives",
+        "type": "archiveSection",
+        "title": "阅读往期热文",
+        "categories": [
+          {
+            "name": "心法",
+            "iconStyle": "emoji",
+            "items": "${sections.archives.xinfa}"
+          },
+          {
+            "name": "做法",
+            "iconStyle": "emoji",
+            "items": "${sections.archives.zuofa}"
+          },
+          {
+            "name": "周报",
+            "iconStyle": "emoji",
+            "items": "${sections.archives.weekly}"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "enabled": true,
+      "elements": [
+        {
+          "type": "about",
+          "title": "关于我们",
+          "content": "${footer.about}",
+          "style": {
+            "titleFontSize": "17px",
+            "titleFontWeight": 700,
+            "contentFontSize": "14px",
+            "contentColor": "#666666",
+            "lineHeight": "1.85"
+          }
+        },
+        {
+          "type": "brand",
+          "content": "${footer.brand}",
+          "style": {
+            "fontSize": "11px",
+            "color": "#cccccc",
+            "letterSpacing": "0.2em",
+            "textAlign": "center",
+            "marginTop": "16px"
+          }
+        }
+      ]
+    }
+  },
+  "itemTemplates": {
+    "newsItem": {
+      "structure": {
+        "signal": {
+          "type": "enum",
+          "values": ["high", "medium", "info"],
+          "mapping": {
+            "high": { "icon": "🔴", "color": "#e74c3c" },
+            "medium": { "icon": "🟡", "color": "#f39c12" },
+            "info": { "icon": "⚪", "color": "#bbbbbb" }
+          },
+          "style": {
+            "fontSize": "12px",
+            "marginRight": "6px",
+            "marginTop": "2px"
+          }
+        },
+        "number": {
+          "type": "autoIncrement",
+          "suffix": "、"
+        },
+        "title": {
+          "type": "string",
+          "required": true,
+          "style": {
+            "fontSize": "15px",
+            "fontWeight": 600,
+            "color": "#1a1a1a",
+            "lineHeight": "1.6"
+          }
+        },
+        "description": {
+          "type": "string",
+          "required": false,
+          "style": {
+            "fontSize": "14px",
+            "color": "#555555",
+            "lineHeight": "1.75",
+            "marginLeft": "26px",
+            "marginTop": "6px"
+          }
+        },
+        "link": {
+          "type": "url",
+          "required": false,
+          "label": "详情链接",
+          "style": {
+            "fontSize": "12px",
+            "color": "#888888",
+            "textDecoration": "none",
+            "borderBottom": "1px solid #dddddd",
+            "marginLeft": "26px",
+            "marginTop": "6px"
+          }
+        }
+      },
+      "layout": {
+        "paddingLeft": "2px",
+        "marginBottom": "22px"
+      }
+    },
+    "archiveItem": {
+      "structure": {
+        "icon": {
+          "type": "emoji",
+          "style": {
+            "color": "#999999",
+            "marginRight": "4px"
+          }
+        },
+        "title": {
+          "type": "string",
+          "required": true,
+          "style": {
+            "fontSize": "14px",
+            "color": "#444444",
+            "lineHeight": "1.7"
+          }
+        }
+      },
+      "layout": {
+        "marginBottom": "10px"
+      }
+    }
+  },
+  "placeholders": {
+    "header": {
+      "tagline": "DAILY AI BRIEFING",
+      "title": "每日AI速递",
+      "subtitle": "Claude Design发布后Adobe、Figma受到冲击\n高价值任务成为头部AI Labs的T0战略"
+    },
+    "sections": {
+      "mainNews": {
+        "items": [
+          {
+            "signal": "high",
+            "title": "Anthropic发布Claude Design正面挑战Figma/Lovable",
+            "description": "Anthropic Labs发布Claude Design，用户可通过自然语言协作完成设计原型、演示文稿等视觉工作，基于Opus 4.7驱动，支持团队设计系统导入、导出Canva/PPTX/PDF/HTML，一键交付Claude Code。Figma、Adobe股价下挫。",
+            "link": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+          },
+          {
+            "signal": "high",
+            "title": "阿里Qwen3.6-Preview发布，强化Agent编码能力",
+            "description": "相比Qwen3.6-Plus显著提升智能体编程能力、更强的世界知识和指令遵循，以及更优的真实场景智能体与知识可靠性表现。",
+            "link": null
+          },
+          {
+            "signal": "medium",
+            "title": "DeerFlow字节开源SuperAgent框架的Agent进化思考",
+            "description": "DeerFlow（GitHub Stars超6万）实践：Agent进化不只关注权重，Context和Harness层同等重要。关键设计含Skill注册、Agent间记忆共享、任务分解验证闭环。",
+            "link": null
+          }
+        ]
+      },
+      "insights": {
+        "items": [
+          {
+            "signal": "high",
+            "title": "Claude吞噬整个AI编程栈，Vibe Coding公司最大错觉是以为自己有护城河",
+            "description": "分析Anthropic产品攻势——Claude Code → Cowork → Routines → Design系统性侵蚀Vibe Coding创业公司生存空间。核心：上游模型厂商亲自做应用时中间层护城河只是薄冰。",
+            "link": null
+          },
+          {
+            "signal": "medium",
+            "title": "Ethan Mollick：Agentic时代的AI选择指南",
+            "description": "首次引入Models/Apps/Harnesses三层框架，AI选择从选模型升级为选Harness。",
+            "link": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the"
+          }
+        ]
+      },
+      "archives": {
+        "xinfa": [
+          { "icon": "☯️", "title": "从罗振宇到冯友兰：AI时代人类生存指南" },
+          { "icon": "👨", "title": "Manus的AI产品心法：从「品味」到「护城河」的深度解读" },
+          { "icon": "☁️", "title": "A16Z Big Ideas 2026：关于2026年科技趋势的47条「剧透」" }
+        ],
+        "zuofa": [
+          { "icon": "🤖", "title": "为什么Anthropic能做出大厂做不出来的模型和Agent？" },
+          { "icon": "🦞", "title": "龙虾08｜我把Karpathy的「个人知识库」做成了一键可用工具" },
+          { "icon": "🦞", "title": "龙虾01｜OpenClaw与AI Agent时代：当How被自动化，人还剩下什么？" }
+        ],
+        "weekly": [
+          { "icon": "🙋", "title": "AI周报｜Coding Agent通用化，Cursor 3和Trae Solo默契更新" },
+          { "icon": "🙋", "title": "AI周报｜谷歌一篇论文崩了存储芯片股、Sora正式关停" }
+        ]
+      }
+    },
+    "footer": {
+      "about": "探微观智聚焦AI产品和创作，思考下一代AI原生产品和交互灵感。从ToC产品创新，到模型、平台、生态、资本、观点报告等上下游迭代趋势，以一线产品实战视角切入，拆解可复用的「AI产品灵感基础模块」，每日更新。",
+      "contactInfo": "进入探微观智公众号，选择「企业合作」",
+      "brand": "探微观智 · 每日AI速递"
+    }
+  },
+  "htmlTemplate": {
+    "wrapper": "<section style=\"max-width: {{config.maxWidth}}; margin: 0 auto; padding: {{config.spacing.padding.vertical}} {{config.spacing.padding.horizontal}} 48px; background: {{config.backgroundColor}}; color: {{config.textColor}}; font-family: {{config.fonts.family}}; line-height: 1.8; font-size: 15px; letter-spacing: 0.02em;\">{{content}}</section>",
+    "sectionDivider": "<section style=\"margin: 0 auto 36px; width: 100%; height: 1px; background: {{config.borders.divider}};\"></section>",
+    "sectionTitle": "<section style=\"display: flex; align-items: center; margin-bottom: 20px;\"><section style=\"width: 3px; height: 18px; background: #1a1a1a; border-radius: 2px; margin-right: 10px;\"></section><h2 style=\"margin: 0; font-size: 17px; font-weight: 700; color: #1a1a1a; letter-spacing: 0.08em;\">{{title}}</h2></section>",
+    "newsItem": "<section style=\"margin-bottom: 22px; padding-left: 2px;\"><section style=\"display: flex; align-items: flex-start; margin-bottom: 4px;\"><span style=\"display: inline-block; min-width: 20px; font-size: 12px; color: {{signal.color}}; margin-right: 6px; margin-top: 2px;\">{{signal.icon}}</span><p style=\"margin: 0; font-size: 15px; font-weight: 600; color: #1a1a1a; line-height: 1.6;\">{{number}}{{title}}</p></section>{{#if description}}<p style=\"margin: 6px 0 0 26px; font-size: 14px; color: #555; line-height: 1.75;\">{{description}}</p>{{/if}}{{#if link}}<p style=\"margin: 6px 0 0 26px; font-size: 12px; color: #aaa;\">→ <a href=\"{{link}}\" style=\"color: #888; text-decoration: none; border-bottom: 1px solid #ddd;\">详情链接</a></p>{{/if}}</section>",
+    "archiveItem": "<p style=\"margin: 0 0 10px; font-size: 14px; color: #444; line-height: 1.7;\"><span style=\"color: #999; margin-right: 4px;\">{{icon}}</span> {{title}}</p>"
+  }
+}

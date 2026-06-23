@@ -1,0 +1,32 @@
+{
+  "updated_at": null,
+  "tiers": {
+    "official": {
+      "weight": 1.0,
+      "examples": ["OpenAI", "Anthropic", "Google Developers", "DeepMind", "Hugging Face", "Vercel", "Cloudflare"]
+    },
+    "primary_social": {
+      "weight": 0.8,
+      "examples": ["founder X posts", "company employee launch posts"]
+    },
+    "reputable_media": {
+      "weight": 0.75,
+      "examples": ["TechCrunch", "The Verge", "Reuters", "Bloomberg", "IT之家", "机器之心", "量子位"]
+    },
+    "wechat_analysis": {
+      "weight": 0.65,
+      "examples": ["深度公众号", "行业分析文章"]
+    },
+    "single_social_lead": {
+      "weight": 0.45,
+      "examples": ["single X lead without official confirmation"]
+    }
+  },
+  "rules": [
+    "Prefer official links for product launches and model releases.",
+    "Use social posts as signals, not sole proof, unless the author is the primary actor.",
+    "Downgrade claims with no direct source URL.",
+    "Keep paywalled sources only when the title and metadata can be verified elsewhere."
+  ]
+}
+

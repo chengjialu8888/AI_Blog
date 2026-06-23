@@ -1,0 +1,189 @@
+# AI周报｜AI开始进实验室、超级App和支付账户：上周最值得看的6条线
+
+上周（2026年6月15日-6月21日）的AI新闻，看起来很散：OpenAI在做药物化学实验，微信和支付宝都在把AI接回超级App，Google在推Agent发现规范，Salesforce花36亿美元买AI客服，国产模型继续卷Coding、多模态、机器人和世界模型。
+
+但把这些事放在一起看，会出现一个很清楚的方向：AI正在从“一个能回答问题的模型”，变成能进实验室、进办公流、进超级App、进支付系统、进组织管理的执行层。
+
+对build AI产品的人来说，这意味着产品机会会越来越靠近真实任务：药物反应、广告视频、客服工单、设计迭代、代码仓库、微信里的日常代办。对关心资本市场的人来说，AI公司的估值逻辑会越来越贴近收入质量、使用频率、任务完成率、模型成本、监管和并购出口。对管理AI数字员工的人来说，下一阶段麻烦的不是“有没有Agent”，而是Agent能访问什么、能花多少钱、能持续运行多久、失败以后谁接手。
+
+这期按6条趋势来读。
+
+---
+
+## 趋势一：AI for Science进入“湿实验”阶段，生命科学成了前沿实验室的新战场
+
+过去两年，AI最容易被验证的场景是写代码，因为输入输出清晰，测试和部署闭环快。上周的信号说明，前沿实验室正在把同样的逻辑搬进生命科学：不只做论文问答，也开始做反应设计、实验执行、rubric评测和人才收编。
+
+这对产品团队的启发是，垂直AI不能只停在“专家助手”。如果任务结果能被真实实验、临床流程、监管文档或工业指标验证，AI的价值会从“节省时间”变成“提高发现效率”。对资本市场来说，AI for Science是一条更长、更慢，但天花板也更高的曲线。对企业管理者来说，它提醒我们：高价值Agent一定会和真实工具链、专家判断、审计记录绑定在一起。
+
+**相关信号：**
+
+- 🔴 OpenAI AI chemist改进药物化学关键反应：GPT-5.4接入Maria运行10080次反应并提升产率。这个信号很硬：模型不只是给出建议，而是进入自动化实验平台，通过大量真实反应迭代出更好的结果。  
+  详情链接：https://openai.com/index/ai-chemist-improves-reaction/
+
+- 🟡 OpenAI发布LifeSciBench：750个专家任务和19020条rubric，用来评测模型在真实科研任务中的表现。它的价值在于把“科研能力”拆成更细的专家判断，而不是只看通用问答或论文摘要。  
+  详情链接：https://openai.com/index/introducing-life-sci-bench/
+
+- 🟡 生辉文章《美国三家最强AI公司，怎么都去搞生命科学了？》：文章梳理John Jumper离开Google DeepMind加入Anthropic、Noam Shazeer离开Google加入OpenAI，以及OpenAI、Anthropic、DeepMind共同加码生命科学。核心判断是，AI for Science正在接近去年AI for Software Engineering的位置，前沿实验室开始围绕生命科学搭建人才、模型、实验和合作网络。  
+  详情链接：https://mp.weixin.qq.com/s/OC2lOufGP2GVGYI4z1COaw
+
+- 🔴 Berkeley RDI发布Agents' Last Exam：ALE用真实职业任务评测长周期Agent，覆盖55个非体力职业、1500余项源于真实工作的任务。Fable 5、GPT-5.5、Composer 2.5等前沿Agent在最困难层级成功率均为0%。这给所有“通用Agent很快替代专家”的叙事泼了一盆冷水：长周期真实任务仍然难，尤其难在不确定性、工具调用、上下文保持和结果验证。  
+  详情链接：https://rdi.berkeley.edu/blog/agents-last-exam
+
+---
+
+## 趋势二：超级App开始接管AI入口，Agent要学会在微信、支付宝和支付系统里办事
+
+上周最有“中国互联网特色”的变化，是AI开始回到超级App。微信小微、AI版支付宝、微信支付AI专属卡、DeepSeek识图入口，这些不是单点功能，而是在重构用户和数字服务之间的关系。
+
+过去用户需要记住入口、打开App、找到小程序、填写表单。Agent时代的理想路径是：用户说一句话，系统理解意图，调工具，控制权限，完成支付或服务跳转。这里的核心资产不是聊天框，而是生态、账号、支付、通讯录、小程序、服务通知和用户信任。
+
+**相关信号：**
+
+- 🟡 微信小微开始小范围公测。产品笔记文章提到，小微使用微信自研WeLM作为主模型，复杂推理用DeepSeek兜底；涉及聊天记录时会先提示授权，并说明聊天记录仅用于回答、不保存；用户还能用自然语言生成“只适合自己用”的小工具。它的关键不是多一个聊天机器人，而是微信把AI入口接入语音、聊天、小程序、搜索、视频号、朋友圈和工具生成。  
+  详情链接：https://mp.weixin.qq.com/s/Li0_j3o8VGEK5Uo2pJOrDA
+
+- 🟡 AI版支付宝开启邀测：支付宝右滑唤起“阿宝”，可做代办服务跳转，被称为20年来最大改版。支付宝的路径更像交易和生活服务入口，和微信小微一起说明，中国超级App已经进入AI入口竞争。  
+  详情链接：https://mp.weixin.qq.com/s/REvYW37gD3d2qOdM7lb5mQ
+
+- 🟡 微信支付据称将上线AI专属卡：AI专属卡用于智能体消费限额和授权控制。这个信号非常重要，Agent如果要替人办事，迟早会碰到“能不能花钱、花多少、谁来审计”的问题。AI专属卡就是把支付权限产品化。  
+  详情链接：https://mp.weixin.qq.com/s/WPM--zXusSljzaphK1N72A
+
+- 🟡 DeepSeek识图模式上线App与网页端：DeepSeek补齐图片理解入口并进入消费端。图像理解入口看似基础，但对普通用户来说，拍照、截图、上传图片，是比写prompt更自然的输入方式。  
+  详情链接：https://www.ithome.com/0/966/066.htm
+
+- 🟡 Google发布Agentic Resource Discovery规范：ARD用catalog和registry，在Web上发布、发现和验证AI工具、技能与Agent。超级App解决的是封闭生态里的工具发现，ARD解决的是开放Web上的工具发现；两者都指向同一件事：Agent需要知道“有什么工具可用”。  
+  详情链接：https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/
+
+- 🟡 Google分享A2UI与MCP Apps集成模式：三种架构模式平衡原生渲染和自定义Agent UI。Agent不是只有文字对话，很多任务仍然需要界面承载确认、编辑和反馈。A2UI和MCP Apps的意义，是让Agent和应用UI之间有更清晰的协作边界。  
+  详情链接：https://developers.googleblog.com/a2ui-and-mcp-apps/
+
+- 🟡 Google Cloud推出OKF v0.1结构化上下文规范：OKF用Markdown/YAML为Agent提供结构化组织知识。OKF的关键不是再造一个知识服务，而是提供可读、可版本化、可跨工具迁移的格式；Google同时发布enrichment agent、静态HTML visualizer和示例bundle，并让Knowledge Catalog能ingest OKF。  
+  详情链接：https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing
+
+- 🟡 Claude Platform支持Workload Identity Federation：WIF用短生命期工作负载身份替代静态API密钥。Agent进入企业系统后，静态key会变成安全短板，短生命期身份、权限边界和审计会成为企业级Agent的基础设施。  
+  详情链接：https://claude.com/blog/workload-identity-federation/
+
+- 🟡 OpenRouter观点：API key是Agent治理护栏。API key层可以做预算、模型白名单和审计。对管理AI数字员工的人来说，key不只是鉴权字符串，而是预算、权限、责任边界和事后复盘的抓手。  
+  详情链接：https://openrouter.ai/blog/insights/agentic-ai-governance
+
+---
+
+## 趋势三：Coding Agent进入“重度使用证据期”，模型、缓存、路由和Dashboard都在补基础设施
+
+过去写代码Agent的叙事，多数停留在demo：生成一个页面、修一个bug、写一段脚本。上周更值得看的，是使用证据和基础设施开始出现。Anthropic分析40万次Claude Code会话，GitHub解释Copilot怎样省token，xAI给多编码会话做Dashboard，Google和OpenRouter也在从工具发现、上下文和治理层补底座。
+
+这说明Coding Agent正从“个人效率工具”变成“可被管理的工程生产系统”。产品建设者要关注模型之外的东西：缓存、路由、worktree、权限、测试、Dashboard、任务拆解。资本市场会看重谁能把高使用量转成健康毛利。管理者则要把Agent当成一个会消耗预算、需要调度、需要复盘的数字团队。
+
+**相关信号：**
+
+- 🔴 智谱GLM-5.2上线并开源：GLM-5.2支持1M上下文并专注Coding与长程任务；在全球百万用户参与盲测的前端开发评估系统Code Arena上，GLM-5.2取得全球可用模型第一的表现。国产Coding模型的竞争，已经从单题能力进入长上下文、长程执行和真实前端评测。  
+  详情链接：https://www.zhipuai.cn/zh/research/161
+
+- 🟡 Anthropic研究Claude Code真实使用与专家回报：Anthropic分析约40万次Claude Code交互会话，覆盖2025年10月至2026年4月。研究称，典型会话中用户做约70%的规划决策，Claude做约80%的执行决策；专业知识越强，每条指令触发的Claude行动越多，成功率也越高；调试会话占比从33%降至19%，任务估值平均提升约27%。这是一份关于agentic coding如何进入非软件职业的高价值使用证据。  
+  详情链接：https://www.anthropic.com/research/claude-code-expertise
+
+- 🟡 GitHub Copilot通过缓存工具搜索和路由提升token效率：Copilot用prompt caching和HyDRA路由提高会话效率。重度Coding Agent的成本压力会倒逼产品做缓存、上下文裁剪、模型路由和工具搜索优化。  
+  详情链接：https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/
+
+- 🟡 Loop Engineering：让系统替你提示Agent。Addy Osmani文章解读Loop Engineering：循环由自动化、worktree、skill、connector、sub-agent和记忆组成。它把“写好prompt”升级成“搭好循环系统”，更接近工程组织真正需要的Agent工作法。  
+  详情链接：https://addyosmani.com/blog/loop-engineering/
+
+- 🟡 xAI为Grok Build推出Agent Dashboard：Grok Build支持集中管理多个编码会话。多Agent或多会话并行后，管理面板会变成标配，否则人很难知道每个Agent在做什么、卡在哪里、用了多少资源。  
+  详情链接：https://x.ai/news/agent-dashboard
+
+- 🟡 Replit：Claude Design可发送到Replit变成应用。设计产物可以进入Replit变成可工作应用，说明“设计-代码-部署”的链路正在被Agent打通。未来设计工具如果不能流入工程执行，很容易停留在好看的静态稿。  
+  详情链接：https://x.com/Replit/status/2067328501003497684
+
+- 🟡 Kimi Work新增目标模式与插件中心：目标模式最长连续运行24小时并接入常用办公插件。长时间运行能力让Agent更像“接任务的人”，插件中心则让它能连接办公系统。  
+  详情链接：https://mp.weixin.qq.com/s/KJav-s9qlkzV9yN8r6-sNg
+
+- 🟡 Xiaomi MiMo Claw正式版上线：MiMo旗舰模型联动金山办公并上线TokenPlan订阅。这是国产模型从能力展示走向办公场景和商业化套餐的信号。  
+  详情链接：https://mp.weixin.qq.com/s/N5ac768a8LkhEjOVpkR1dQ
+
+---
+
+## 趋势四：多模态生产开始卷“便宜、快、可迭代”，内容工具进入工业化阶段
+
+视频、设计、语音、广告素材这条线，上周也很密。真正的变化不是“能不能生成”，而是能不能低成本、多版本、可迭代、可接入业务目标。
+
+对产品团队来说，多模态工具的机会会越来越靠近营销、设计、内容运营、客服和电商，而不是只服务创作者玩票。对资本市场来说，生成成本下降会扩大使用量，但也会压缩单点工具的溢价。对管理AI数字员工的人来说，多模态Agent会更像一个内容工厂：不停出草稿、试素材、看数据、再迭代。
+
+**相关信号：**
+
+- 🟡 天工3.1发布Skywork Design与Dynamic Workflows：画布承载长期设计迭代并调度多Agent并行执行。设计不再只是一次性生成图片，而是可以在画布里长期演进、多人协作、Agent并行完成不同环节。  
+  详情链接：https://mp.weixin.qq.com/s/BshpodcEwshDfKd7PWjzMQ
+
+- 🟡 火山引擎Kickart 3.0上线，对话式生成广告视频：Kickart接入Seedance 2.0 Mini并支持爆款裂变。广告视频很适合AI，因为它天然需要多版本测试、快速迭代和明确转化目标。  
+  详情链接：https://mp.weixin.qq.com/s/e6SOMeRbdMB_zATsNcYmUQ
+
+- 🟡 Seedance 2.0 Mini上线，视频生成成本约减半：Seedance Mini主打更快和更低视频生成成本，1.6毛/秒。视频生成如果成本继续下降，素材生产会从“精挑细选”变成“批量试错”。  
+  详情链接：https://mp.weixin.qq.com/s/z0v7FtutleRrNwaGfwqN_w
+
+- 🟡 Midjourney V8.1推出Draft mode：Draft mode一次生成24张草稿且快速小时减半。它对应的是创意工作中的“先发散再收敛”，让用户更快看到多个方向。  
+  详情链接：https://updates.midjourney.com/draft-mode-for-v8-1-and-new-feature-previews
+
+- 🟡 Cartesia发布Sonic 3.5与Ink 2实时语音模型：Cartesia同时升级听与说的实时语音模型。实时语音会成为Agent进入客服、陪伴、会议、教育和车载场景的关键接口。  
+  详情链接：https://x.com/testingcatalog/status/2066773392527655252
+
+---
+
+## 趋势五：机器人和世界模型在升温，但真实长周期Agent仍然很难
+
+机器人、世界模型、可交互数字世界，是另一个明显升温的方向。它们都在回答同一个问题：AI如何理解环境、规划动作，并在真实或模拟世界中完成任务。
+
+但ALE的结果提醒我们，长周期真实任务远没到轻松解决的阶段。世界模型和机器人模型很重要，可真正落地还需要数据、仿真、控制、验证、安全和成本一起成熟。Build AI产品的人需要区分“演示里能动”和“生产里可用”；资本市场也会更关注哪些团队能把模型能力变成稳定系统。
+
+**相关信号：**
+
+- 🔴 阿里云开放HappyOyster 1.0世界模型：HappyOyster支持实时指令和可交互数字世界，4月曾发布内测。世界模型的价值在于让Agent能在可模拟环境里理解状态、尝试动作、获得反馈。  
+  详情链接：https://www.ithome.com/0/965/652.htm
+
+- 🔴 Qwen发布RobotManip/RobotWorld/RobotNav机器人系列：Qwen同日释放操作、世界、导航三条机器人模型线。机器人模型正在从单一能力走向组合栈：看懂世界、规划路径、操作物体。  
+  详情链接：https://qwen.ai/blog?id=qwen-robotmanip
+
+- 🟡 MiniMax开源M3模型权重及MSA技术论文：MiniMax M3为428B总参数、23B激活参数，并发布MSA论文。大参数稀疏激活模型继续成为国产模型竞争的技术路线之一。  
+  详情链接：https://mp.weixin.qq.com/s/AW6L89QZkwN-jD27hQ84ww
+
+- 🟡 OpenRouter Fusion用多模型并行合成提升深度研究表现：Fusion并行调用多模型并由judge整理共识与盲点；OpenRouter用DRACO deep research评测这一模式，并强调它不是Fable的通用替代品，也不适合作为coding model的直接替代；更适合架构决策、复杂研究、最佳实践比较等值得花更多时间和成本的问题。  
+  详情链接：https://openrouter.ai/blog/announcements/fusion-beats-frontier/
+
+---
+
+## 趋势六：AI商业化进入“人才、并购、订阅、组织ROI”阶段
+
+上周还有一条资本和组织线索：AI公司开始找全球化人才，传统软件巨头用并购补Agent能力，企业用户大规模使用AI但还没完全转化为组织价值。
+
+这对投资人和管理者都很重要。AI应用能不能长大，最终不只看模型强不强，还看能不能卖到全球、能不能留住用户、能不能嵌进工作流、能不能把节省出来的时间变成收入、利润或更快的交付。
+
+**相关信号：**
+
+- 🟡 游戏那点事报道：前米哈游国际化总裁金雯怡已加入月之暗面，负责Kimi相关业务，可能负责出海和全球化。文章提到Kimi融资额、海外收入增长、K2.5带来的全球付费用户增长，以及金雯怡在米哈游全球化中的经验。这个信号说明，中国AI应用开始把“模型能力”之后的竞争重点放到全球化、本地化和品牌信任。  
+  详情链接：https://mp.weixin.qq.com/s/AAancRZe3MXQ5NUyfb39qw
+
+- 🔴 Salesforce据报36亿美元收购AI客服平台Fin：Salesforce通过收购补强Agentforce客服能力。AI客服是最容易形成明确ROI的Agent场景之一，大厂用并购补能力，也给初创公司提供了清晰退出路径。  
+  详情链接：https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b
+
+- 🟡 BCG万人调研：多数人认为3年内Agent能完成至少一半工作。报告覆盖全球近1.2万名受访者，74%的一线员工已成为AI常规用户，一年内增长23个百分点；在经常使用AI的一线员工中，42%表示每周节省8小时；超过六成受访者认为AI Agent在3年内能完成他们一半的工作。它的重点不是“工具已普及”，而是企业仍没有把节省出的时间转化为组织价值。  
+  详情链接：https://mp.weixin.qq.com/s/EHPjfbF1wMlMkqYmLOe7ZA
+
+---
+
+## 本周结论：AI正在从“模型竞争”进入“执行系统竞争”
+
+如果只看单条新闻，上周像是模型发布、产品更新、论文规范、融资并购混在一起。但把它们连起来，主线很清楚：
+
+1. 科学场景开始要求AI进入实验闭环，而不只是写报告。
+2. 超级App开始把AI接入真实用户入口，而不只是做独立聊天工具。
+3. Coding Agent开始有真实使用证据，成本、缓存、路由、Dashboard会变得关键。
+4. 多模态生产进入工业化阶段，低成本和多版本迭代会改变内容工作流。
+5. 机器人和世界模型在升温，但长周期真实任务仍然困难。
+6. 商业化开始看全球化人才、并购出口、订阅设计和组织ROI。
+
+给build AI产品的人，一个判断标准是：你的Agent有没有进入真实任务链条？有没有工具、权限、验证和失败恢复？
+
+给关心资本市场的人，一个判断标准是：这家公司增长背后，是模型红利、渠道红利，还是可持续的工作流和付费习惯？
+
+给管理AI数字员工的人，一个判断标准是：你的组织有没有准备好让Agent访问系统、调用工具、花钱、留下审计记录，并把节省出来的时间重新分配？
+
+下周继续看三个问题：AI for Science能否出现更多实验闭环；微信、支付宝这类超级App会如何定义AI入口；以及Agent治理会不会从API key、支付卡和工作负载身份开始变成企业标配。

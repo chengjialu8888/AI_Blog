@@ -1,0 +1,30 @@
+{
+  "name": "ai-blog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI daily and weekly publishing workflow built on AI_News_Digest outputs.",
+  "scripts": {
+    "daily:render": "node scripts/render-daily.mjs",
+    "weekly:build": "node scripts/build-weekly.mjs",
+    "verify": "node scripts/verify-report.mjs",
+    "memory:update": "node scripts/update-memory.mjs",
+    "demo": "npm run daily:render -- --markdown examples/daily/sample-daily.md --csv examples/daily/sample-daily.csv --out output/daily/sample-daily.html && npm run weekly:build -- --weekly-md examples/weekly/sample-weekly.md --out-md output/weekly/sample-weekly.md --out-html output/weekly/sample-weekly.html --out-xml output/weekly/sample-weekly.xml && npm run verify -- --markdown examples/daily/sample-daily.md --csv examples/daily/sample-daily.csv --html output/daily/sample-daily.html"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chengjialu8888/AI_Blog.git"
+  },
+  "keywords": [
+    "ai-news",
+    "daily-report",
+    "weekly-report",
+    "loop-engineering",
+    "wechat",
+    "feishu"
+  ],
+  "license": "MIT"
+}

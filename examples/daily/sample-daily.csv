@@ -1,0 +1,26 @@
+日期,编号,板块,标题,信号等级,事实核验,关联公司,关联赛道,来源,原文URL,摘要,是否推送
+2026-06-23,1,大厂动向,OpenAI Daybreak 推出 GPT-5.5-Cyber 与 Codex Security 更新,🔴,一手信源,OpenAI,AI安全/漏洞修复/Codex Security,OpenAI,https://openai.com/index/daybreak-securing-the-world/,从发现漏洞推进到验证和自动补丁,是
+2026-06-23,2,大厂动向,火山引擎Force大会发布Seed2.1与豆包音频生成1.0,🔴,一手信源/微信文章,字节Seed/豆包/TRAE/火山方舟/火山引擎,大模型/Agent/代码工程/音频生成/API平台,字节Seed/火山引擎微信,https://seed.bytedance.com/zh/blog/seed2-1-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-%E6%B7%B1%E5%85%A5-ai-%E7%94%9F%E4%BA%A7%E5%8A%9B,模型产品入口和云API打包推进生产力AI,是
+2026-06-23,3,大厂动向,京东开源JoyAI-VL-Interaction实时视频交互系统,🟡,微信文章,京东JoyAI/vLLM-Omni,实时多模态/视频理解/物理世界AI,微信文章,https://mp.weixin.qq.com/s/IY6XGp4k6VgD9ZPH6YprCA,全栈开源边看边说模型和可部署系统,是
+2026-06-23,4,大厂动向,千问高考志愿Agent测评对标人类咨询师,🟡,微信文章,阿里/千问/夸克,教育AI/垂直Agent/高考志愿,微信文章,https://mp.weixin.qq.com/s/oGHVP4MgGS1rbmT8s8St8Q,44道事实题全对并减少咨询师耗时,否
+2026-06-22,5,大厂动向,xAI Grok Build推出goal长任务模式,🟡,一手信源,xAI/Grok Build,Agent长任务/AI编程,xAI,https://x.ai/news/introducing-goal,设定目标后自动规划清单并持续执行验证,是
+2026-06-22,6,大厂动向,Google DeepMind向A24投资7500万美元合作电影AI工具,🟡,媒体报道,Google DeepMind/A24,AI影视/生成式媒体,TechCrunch,https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/,科技公司与工作室合作开发电影AI工具,否
+2026-06-18,7,大厂动向,OpenAI o3 Deep Research辅助重析376例罕见病病例,🟡,一手信源,OpenAI/Boston Childrens/Harvard,医疗AI/罕见病/专家辅助,OpenAI,https://openai.com/index/diagnose-rare-childhood-diseases/,专家复核后确认18例新诊断,是
+2026-06-22,8,初创动向,Sakana AI推出Fugu多智能体编排系统,🟡,单源线索,Sakana AI/Fugu,多Agent编排/API产品,X线索,https://x.com/berryxia/status/2069090959938466298,将任务拆解模型调度和验证封装为单个API调用,否
+2026-06-22,9,初创动向,Inception Labs Mercury 2主打扩散式高速推理,🟡,媒体报道,Inception Labs/Mercury 2,扩散语言模型/高速推理/API,Decrypt,https://decrypt.co/371722/inception-labs-mercury-2-ai-beats-googles-diffusiongemma,约1000 tokens/s面向速度敏感工作流,否
+2026-06-19,10,生态动向,FERC要求加速AI数据中心等大型用户并网,🔴,媒体报道,FERC/AI数据中心,算力基础设施/电力/监管,TechCrunch,https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/,六大电网运营商需为数据中心并网开快车道,是
+2026-06-19,11,生态动向,AlphaFold负责人John Jumper将加入Anthropic,🟡,一手线索,Google DeepMind/Anthropic/John Jumper,AI人才/AI for Science,Demis Hassabis X,https://x.com/demishassabis/status/2068002732250640603,AlphaFold关键人物离开DeepMind并转投Anthropic,是
+2026-06-22,12,技术博客&论文,Google ADK与A2A构建跨语言多智能体流水线,🟡,一手信源,Google/ADK/A2A,Agent协议/多Agent/工程实践,Google Developers,https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a/,Python和Go agent通过A2A协作处理合同合规,是
+2026-06-22,13,技术博客&论文,Google Jules提出用洞察策略评估主动型coding agent,🟡,一手信源,Google Labs/Jules,AI编程/Agent评测/主动性,Google Developers,https://developers.googleblog.com/measuring-what-matters-with-jules/,基于705个bug和1178个CL评估agent洞察能力,是
+2026-06-22,14,技术博客&论文,PP-OCRv6登陆Hugging Face支持50语言OCR,🟡,一手信源,PaddlePaddle/Hugging Face,OCR/文档智能/多语言模型,Hugging Face Blog,https://huggingface.co/blog/PaddlePaddle/pp-ocrv6,1.5M到34.5M参数模型族面向轻量OCR部署,否
+2026-06-22,15,技术博客&论文,Cursor审计coding benchmark中的reward hacking,🟡,一手信源,Cursor,AI编程/Benchmark/评测污染,Cursor Blog,https://cursor.com/blog/reward-hacking-coding-benchmarks,公开来源检索和环境限制显著影响coding分数,是
+2026-06-19,16,观点与深度,Nathan Lambert称禁止开源AI会是错误,🟡,单源深度,Interconnects/Open Source AI,AI治理/开源模型/政策,Interconnects,https://www.interconnects.ai/p/banning-open-source-ai-would-be-a,开放权重被视为对抗模型垄断和保持竞争的力量,否
+2026-06-23,B1,海外建设者,Sam Altman强调Daybreak从发现漏洞转向修复安全问题,🟡,一手线索,OpenAI,AI安全/Codex Security/开源修复,Sam Altman X,https://x.com/sama/status/2069121360744550796,GPT-5.5-Cyber和Patch the Planet面向防御修复,是
+2026-06-23,B2,海外建设者,Aaron Levie称企业Agent进步下游于evals,🟡,一手线索,Box/企业AI,Agent评测/企业工作流,Aaron Levie X,https://x.com/levie/status/2069228335255949775,企业需要理解工作流并评估Agent参与质量,是
+2026-06-23,B3,海外建设者,Guillermo Rauch展示Claude Design到Vercel一键链路,🟡,一手线索,Vercel/Anthropic,设计到部署/Agent工作流,Guillermo Rauch X,https://x.com/rauchg/status/2069219190834127276,设计代码部署之间的摩擦继续降低,否
+2026-06-23,B4,海外建设者,Ryo Lu分享Cursor Compile关于AI时代构建方式的演讲,🟡,一手线索,Cursor,AI编程/产品设计/开发者体验,Ryo Lu X,https://x.com/ryolu_/status/2069218497272717661,AI时代构建方式改变但产品原则仍重要,否
+2026-06-23,B5,海外建设者,Zara Zhang发布Frontend Slides skill完整walkthrough,🟡,一手线索,Zara Zhang/Frontend Slides,Agent Skills/幻灯片/Claude Code,Zara Zhang X,https://x.com/zarazhangrui/status/2069311440692072481,22k stars项目复盘如何用Claude Code做HTML slides,是
+2026-06-19,17,养虾实践,Cloudflare为AI agents推出临时账户部署Worker,🟡,一手信源,Cloudflare/Wrangler,Agent部署/云平台/开发者工具,Cloudflare Blog,https://blog.cloudflare.com/temporary-accounts/,wrangler temporary让agent无需注册即可部署验证,是
+2026-06-19,18,养虾实践,OpenClaw接入OpenRouter统一模型路由,🟡,一手信源,OpenRouter/OpenClaw,Agent路由/模型网关/养虾实践,OpenRouter,https://openrouter.ai/blog/tutorials/openclaw-openrouter,一条命令配置统一密钥账单和300多个模型故障转移,否
+2026-06-22,19,养虾实践,Vercel WebSocket公测支持Functions双向实时通信,🟡,一手信源,Vercel,WebSocket/AI streaming/协作应用,Vercel Changelog,https://vercel.com/changelog/websocket-support-is-now-in-public-beta,补齐AI实时交互和协作应用基础设施,是
+2026-06-21,20,养虾实践,Mozilla安全修复实践强调Agent harness与人工审核闭环,🟡,单源深度,Mozilla/Claude Mythos/ChatPRD,AI安全修复/Agent工作流/人工审核,ChatPRD,https://www.chatprd.ai/how-i-ai/how-mozilla-fixed-500-security-bugs-with-mythos,近500安全bug峰值背后是工程闭环,是

@@ -1,0 +1,135 @@
+{
+  "template_name": "公众号推文-青灰版",
+  "version": "1.0",
+  "description": "水墨风格青灰色调微信公众号推文模板，适用于技术/商业深度内容",
+  "global_styles": {
+    "font_family": "-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif",
+    "serif_font": "'Noto Serif SC', 'Songti SC', 'SimSun', serif",
+    "base_color": "#1a1a1a",
+    "secondary_color": "#4a5568",
+    "muted_color": "#6b7280",
+    "accent_color": "#5a7a8a",
+    "heading_color": "#3d4852",
+    "bg_gray": "#f0f4f7",
+    "border_gray": "#e2e8f0",
+    "line_height": "1.85",
+    "base_font_size": "16px"
+  },
+  "modules": [
+    {
+      "id": "header_image",
+      "name": "头图",
+      "description": "全宽水墨山水画头图",
+      "html": "<section style=\"margin: 0 -24px 28px -24px;\">\n<img src=\"{{image_url}}\" style=\"width: 100%; display: block;\" />\n</section>",
+      "variables": ["image_url"],
+      "default_image": "https://p-mira-img-sign-sgnontt.byteintl.net/tos-mya-i-xobrcjvdq7/572b70dc417b4f878753683376287710.jpeg~tplv-xobrcjvdq7-image-jpeg.jpeg"
+    },
+    {
+      "id": "tldr",
+      "name": "TLDR摘要",
+      "description": "青灰背景重点摘要块",
+      "html": "<section style=\"background: #f0f4f7; padding: 18px 22px; margin-bottom: 32px; font-size: 14.5px; color: #4a5568; line-height: 1.8;\">\n<strong style=\"color: #3d4852;\">TLDR：</strong>{{content}}\n</section>",
+      "variables": ["content"]
+    },
+    {
+      "id": "paragraph",
+      "name": "正文段落",
+      "description": "普通正文段落",
+      "html": "<p style=\"margin-bottom: 18px; font-size: 16px; line-height: 1.85; color: #1a1a1a;\">\n{{content}}\n</p>",
+      "variables": ["content"]
+    },
+    {
+      "id": "section_title",
+      "name": "章节标题",
+      "description": "带数字的章节小标题（如：1｜标题）",
+      "html": "<p style=\"font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif; font-size: 19px; font-weight: 700; color: #3d4852; margin: 40px 0 18px 0;\">\n{{number}}｜{{title}}\n</p>",
+      "variables": ["number", "title"]
+    },
+    {
+      "id": "emphasis_bold",
+      "name": "强调文本",
+      "description": "段落内加粗强调",
+      "html": "<p style=\"margin-bottom: 14px; font-size: 16px; line-height: 1.85; color: #1a1a1a;\">\n<strong>{{content}}</strong>\n</p>",
+      "variables": ["content"]
+    },
+    {
+      "id": "keypoint_block",
+      "name": "重点块",
+      "description": "青灰左边线重点提示块",
+      "html": "<section style=\"border-left: 3px solid #5a7a8a; padding-left: 18px; margin: 22px 0;\">\n<p style=\"margin: 0; font-size: 15.5px; line-height: 1.8; color: #2d3748;\">\n<strong>{{title}}</strong>{{content}}\n</p>\n</section>",
+      "variables": ["title", "content"]
+    },
+    {
+      "id": "quote_center",
+      "name": "居中引用",
+      "description": "居中引用块，带上下边框",
+      "html": "<section style=\"text-align: center; margin: 32px 0; padding: 20px 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;\">\n<p style=\"font-size: 17px; line-height: 1.75; color: #4a5568; margin: 0; font-style: italic; font-family: 'Noto Serif SC', 'Songti SC', serif;\">\n{{quote}}\n</p>\n<p style=\"font-size: 13px; color: #718096; margin: 8px 0 0 0;\">——{{source}}</p>\n</section>",
+      "variables": ["quote", "source"]
+    },
+    {
+      "id": "timeline_days",
+      "name": "时间线",
+      "description": "Day 1/2/3/4 时间线展示",
+      "html": "<section style=\"padding: 14px 0; margin-bottom: 20px; font-size: 15px; line-height: 2; color: #3d4852;\">\n{{items}}\n</section>",
+      "item_template": "<strong style=\"color: #5a7a8a;\">{{day}}</strong>　{{content}}<br/>",
+      "variables": ["items"]
+    },
+    {
+      "id": "comparison",
+      "name": "对比文本",
+      "description": "灰色调对比说明文字",
+      "html": "<p style=\"margin-bottom: 20px; font-size: 15px; line-height: 1.8; color: #6b7280;\">\n{{content}}\n</p>",
+      "variables": ["content"]
+    },
+    {
+      "id": "toc_block",
+      "name": "目录块",
+      "description": "青灰背景目录列表",
+      "html": "<section style=\"background: #f0f4f7; padding: 22px 26px; margin: 24px 0;\">\n<p style=\"margin: 0 0 14px 0; font-weight: 600; color: #3d4852; font-size: 15px;\">{{title}}</p>\n{{items}}\n</section>",
+      "item_template": "<p style=\"margin: 0 0 12px 0; font-size: 14.5px; line-height: 1.75; color: #4a5568;\"><strong style=\"color: #5a7a8a;\">{{part}}</strong>　{{description}}</p>",
+      "variables": ["title", "items"]
+    },
+    {
+      "id": "cta_section",
+      "name": "CTA按钮",
+      "description": "行动号召居中区块",
+      "html": "<section style=\"margin: 36px 0; text-align: center;\">\n<p style=\"font-size: 16px; color: #3d4852; margin: 0 0 8px 0;\">{{main_text}}</p>\n<p style=\"font-size: 13px; color: #718096; margin: 0;\">{{sub_text}}</p>\n</section>",
+      "variables": ["main_text", "sub_text"]
+    },
+    {
+      "id": "author_footer",
+      "name": "作者信息",
+      "description": "底部作者介绍",
+      "html": "<section style=\"border-top: 1px solid #e2e8f0; margin: 36px 0 0 0; padding-top: 20px;\">\n<p style=\"font-size: 14px; color: #718096; line-height: 1.6; margin: 0;\">\n{{content}}\n</p>\n</section>",
+      "variables": ["content"]
+    },
+    {
+      "id": "divider",
+      "name": "分隔线",
+      "description": "章节间分隔线",
+      "html": "<section style=\"border-top: 1px solid #e2e8f0; margin: 40px 0 28px 0; padding-top: 28px;\"></section>",
+      "variables": []
+    }
+  ],
+  "wrapper": {
+    "opening": "<section style=\"padding: 0 24px; line-height: 1.85; color: #1a1a1a; font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;\">",
+    "closing": "</section>"
+  },
+  "color_scheme": {
+    "name": "青灰水墨",
+    "primary": "#5a7a8a",
+    "heading": "#3d4852",
+    "background": "#f0f4f7",
+    "border": "#e2e8f0",
+    "text": "#1a1a1a",
+    "text_secondary": "#4a5568",
+    "text_muted": "#718096"
+  },
+  "usage_notes": [
+    "所有 section 必须包裹在 wrapper 内",
+    "头图使用负 margin (margin: 0 -24px) 实现全宽",
+    "章节标题使用 Noto Serif SC 宋体，正文使用系统无衬线字体",
+    "重点内容使用青灰背景 (#f0f4f7) 或青灰边线 (#5a7a8a)",
+    "引用块上下边框使用 #e2e8f0，文字使用斜体宋体"
+  ]
+}
