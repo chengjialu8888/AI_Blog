@@ -2,4 +2,7 @@ node_modules/
 .DS_Store
 output/**/*.tmp
 *.log
-
+.env
+.env.*
+!.env.example
+**/.wechat-media-cache.json
